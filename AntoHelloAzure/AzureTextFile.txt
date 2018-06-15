@@ -1,0 +1,5 @@
+﻿Remove everything from Index view
+
+Create app service plan in Azure
+
+Create app service in azure -> select webapp
