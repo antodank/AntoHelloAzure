@@ -5,14 +5,24 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AntoHelloAzure.Models;
+using Microsoft.Extensions.Configuration;
+    
 
 namespace AntoHelloAzure.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IConfiguration configuration;
+        
+        public HomeController(IConfiguration iconfig)
+        {
+            this.configuration = iconfig; 
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var model = configuration["Greeting"];
+            return View("Index" , model);
         }
 
         public IActionResult About()

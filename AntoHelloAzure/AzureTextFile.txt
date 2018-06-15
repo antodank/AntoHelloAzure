@@ -3,3 +3,39 @@
 Create app service plan in Azure
 
 Create app service in azure -> select webapp
+
+
+======================= git ====================
+Add vs code to github / if not worked add from cli
+https://blogs.msdn.microsoft.com/benjaminperkins/2017/04/04/setting-up-and-using-github-in-visual-studio-2017/
+
+steps to Deploy GitHub source code repositories to an Azure App Service
+https://blogs.msdn.microsoft.com/benjaminperkins/2017/05/10/deploy-github-source-code-repositories-to-an-azure-app-service/
+
+=========== git CLI  command
+
+C:\Users\anton\Source\Repos\AntoHelloAzure>git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\anton\Source\Repos\AntoHelloAzure>git remote add AntoHelloAzure https://github.com/antodank/AntoHelloAzure.git
+
+C:\Users\anton\Source\Repos\AntoHelloAzure>git push AntoHelloAzure master
+
+
+========================================
+
+Add new key in appsettings.json
+
+Perform changes in Home Controller
+-> add Microsoft.Extensions.Configuration
+-> add required code changes
+
+-> on Azure Portal Go To App Service
+-> add key in application Settings
+-> Go To deployment slot -> Add name -> select web app
+
+Deployment Slot is nothing but the instance of your app service
